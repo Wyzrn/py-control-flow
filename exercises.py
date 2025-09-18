@@ -32,3 +32,26 @@ def check_voting_eligibility():
 
 # Call the function
 check_voting_eligibility()
+
+# Exercise 3: Calculate Dog Years
+
+def calculate_dog_years():
+    # Your control flow logic goes here
+    try:
+        dog_age_input = input("Input a dog's age: ")
+        dog_age = int(dog_age_input)
+        if dog_age <= 0:
+            print("Invalid age. Please enter a positive number.")
+        else:
+            if dog_age == 1:
+                dog_years = 10
+            elif dog_age == 2:
+                dog_years = 20
+            else:
+                dog_years = 20 + (dog_age - 2) * 7
+            print(f"The dog's age in dog years is {dog_years}.")
+    except ValueError:
+        print("Invalid input. Please enter a valid number for age.")
+
+# Call the function
+calculate_dog_years()
